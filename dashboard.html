@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard · Deborah Ufedejo Ministries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<style>
+  body { background: var(--paper); }
+</style>
+</head>
+<body>
+  <div class="dash">
+    <aside class="dash__side">
+      <a href="index.html" class="dash__logo">
+        Deborah Ufedejo
+        <small>Ministry Portal</small>
+      </a>
+      <div class="dash__nav">
+        <span class="dash__nav-label">Overview</span>
+        <a href="dashboard.html" class="is-active">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="2" width="5" height="5" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="9" width="5" height="5" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="9" width="5" height="5" stroke="currentColor" stroke-width="1.3"/></svg>
+          Dashboard
+        </a>
+        <a href="dashboard.html#invitations">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4l6 4 6-4M2 4v8h12V4M2 4h12" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          Invitations <span class="count">12</span>
+        </a>
+
+        <span class="dash__nav-label">Engagements</span>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M2 6h12M5 1v3M11 1v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Calendar
+        </a>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 13l6-11 6 11H2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          Upcoming
+        </a>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/></svg>
+          Completed
+        </a>
+
+        <span class="dash__nav-label">Ministry</span>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2 14c0-3 3-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          People
+        </a>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3h10v10H3z M3 6h10M6 3v10" stroke="currentColor" stroke-width="1.3"/></svg>
+          Documents
+        </a>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Analytics
+        </a>
+        <a href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="1.5" fill="currentColor"/><path d="M13 8a5 5 0 01-1.5 3.5l1 1M3 4.5l1 1A5 5 0 003 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/></svg>
+          Settings
+        </a>
+      </div>
+      <div class="dash__user">
+        <div class="dash__user-avatar">DU</div>
+        <div class="dash__user-info">
+          <strong>Ministry Team</strong>
+          <span>Administrator</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="dash__main">
+      <header class="dash__head">
+        <div>
+          <h1>Good morning, Team.</h1>
+          <p>Here's what's happening across the ministry today.</p>
+        </div>
+        <div style="display:flex; gap: 10px;">
+          <a href="index.html" class="btn btn--ghost" style="padding: 10px 18px; font-size: 13px;">View Website</a>
+          <button class="btn btn--primary" style="padding: 10px 18px; font-size: 13px;">
+            Export
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8v2h8V8M6 2v6M3 5l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Stats -->
+      <div class="dash-stats">
+        <div class="stat-card stat-card--accent">
+          <div class="stat-card__label">New Invitations</div>
+          <div class="stat-card__value">04</div>
+          <div class="stat-card__meta">
+            <span style="color: var(--gold-soft);">↑ 2</span> new this week
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Under Review</div>
+          <div class="stat-card__value">03</div>
+          <div class="stat-card__meta">Awaiting review by ministry team</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Pending Decisions</div>
+          <div class="stat-card__value">02</div>
+          <div class="stat-card__meta">Requires prayer & confirmation</div>
+        </div>
+      </div>
+
+      <div class="dash-stats">
+        <div class="stat-card">
+          <div class="stat-card__label">Confirmed Engagements</div>
+          <div class="stat-card__value">05</div>
+          <div class="stat-card__meta">On the schedule</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Upcoming Events</div>
+          <div class="stat-card__value">03</div>
+          <div class="stat-card__meta">Next: Encounter Night</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Completed Engagements</div>
+          <div class="stat-card__value">18</div>
+          <div class="stat-card__meta">Since ministry launch</div>
+        </div>
+      </div>
+
+      <!-- Invitations panel -->
+      <section id="invitations" style="margin-top: 40px;">
+        <div class="dash-panel">
+          <div class="dash-panel__head">
+            <div>
+              <h3>Recent Invitations</h3>
+              <p style="font-size: 12px; color: var(--muted); margin-top: 4px;">Last 30 days · 12 total</p>
+            </div>
+            <div class="dash-panel__actions">
+              <div class="dash-panel__filter">
+                <button class="is-active">All</button>
+                <button>New</button>
+                <button>Review</button>
+                <button>Confirmed</button>
+              </div>
+            </div>
+          </div>
+          <table class="inv-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Organization</th>
+                <th>Date</th>
+                <th>City</th>
+                <th>Status</th>
+                <th>Submitted</th>
+              </tr>
+            </thead>
+            <tbody id="inv-tbody">
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Encounter Night 2026<small>Worship Gathering</small></div></td>
+                <td>Grace Chapel International</td>
+                <td>15 Mar 2026</td>
+                <td>Lagos</td>
+                <td><span class="status-pill status-pill--new">New</span></td>
+                <td class="inv-table__date">2 hrs ago</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">His Presence Conference<small>Conference</small></div></td>
+                <td>Awakening Movement</td>
+                <td>08 Apr 2026</td>
+                <td>Abuja</td>
+                <td><span class="status-pill status-pill--review">Under Review</span></td>
+                <td class="inv-table__date">Yesterday</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Kingdom Youth Retreat<small>Retreat</small></div></td>
+                <td>Kingdom Life Fellowship</td>
+                <td>22 Apr 2026</td>
+                <td>Port Harcourt</td>
+                <td><span class="status-pill status-pill--pending">Pending Decision</span></td>
+                <td class="inv-table__date">2 days ago</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Sunday Ministration<small>Church Service</small></div></td>
+                <td>Cornerstone Chapel</td>
+                <td>05 May 2026</td>
+                <td>Accra</td>
+                <td><span class="status-pill status-pill--approved">Approved</span></td>
+                <td class="inv-table__date">3 days ago</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Worship Night — Awake<small>Worship Night</small></div></td>
+                <td>Awake City Church</td>
+                <td>19 May 2026</td>
+                <td>Nairobi</td>
+                <td><span class="status-pill status-pill--confirmed">Confirmed</span></td>
+                <td class="inv-table__date">1 week ago</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Wedding Ministration<small>Special Event</small></div></td>
+                <td>Private</td>
+                <td>02 Jun 2026</td>
+                <td>Abuja</td>
+                <td><span class="status-pill status-pill--info">More Info</span></td>
+                <td class="inv-table__date">1 week ago</td>
+              </tr>
+              <tr onclick="location.href='invitation-detail.html'">
+                <td><div class="inv-table__event">Annual Convention<small>Conference</small></div></td>
+                <td>Living Waters Ministries</td>
+                <td>14 Jul 2026</td>
+                <td>Cape Town</td>
+                <td><span class="status-pill status-pill--review">Under Review</span></td>
+                <td class="inv-table__date">2 weeks ago</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Upcoming events row -->
+      <section style="margin-top: 32px; display:grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+        <div class="dash-panel">
+          <div class="dash-panel__head">
+            <h3>Upcoming engagements</h3>
+            <a href="#" class="link-arrow" style="font-size: 12px;">View all</a>
+          </div>
+          <div style="padding: 8px 0;">
+            <div style="display:flex; align-items: center; padding: 18px 24px; border-top: 1px solid var(--line); gap: 24px;">
+              <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; min-width: 100px;">05 MAY · 2026</div>
+              <div style="flex: 1;">
+                <div class="inv-table__event">Sunday Ministration<small>Cornerstone Chapel · Accra</small></div>
+              </div>
+              <span class="status-pill status-pill--approved">Approved</span>
+            </div>
+            <div style="display:flex; align-items: center; padding: 18px 24px; border-top: 1px solid var(--line); gap: 24px;">
+              <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; min-width: 100px;">19 MAY · 2026</div>
+              <div style="flex: 1;">
+                <div class="inv-table__event">Worship Night — Awake<small>Awake City Church · Nairobi</small></div>
+              </div>
+              <span class="status-pill status-pill--confirmed">Confirmed</span>
+            </div>
+            <div style="display:flex; align-items: center; padding: 18px 24px; border-top: 1px solid var(--line); gap: 24px;">
+              <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.06em; min-width: 100px;">14 JUL · 2026</div>
+              <div style="flex: 1;">
+                <div class="inv-table__event">Annual Convention<small>Living Waters · Cape Town</small></div>
+              </div>
+              <span class="status-pill status-pill--review">Under Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <div class="dash-panel__head">
+            <h3>This week</h3>
+          </div>
+          <div style="padding: 24px;">
+            <div style="font-family: var(--font-display); font-size: 44px; line-height: 1; margin-bottom: 8px;">04</div>
+            <p class="muted" style="font-size: 13px;">new invitations arrived this week — 2 awaiting first review.</p>
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line);">
+              <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px;">Next action</div>
+              <button class="btn btn--primary" style="padding: 10px 16px; font-size: 13px; width: 100%;">Review 2 new invitations</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    // Merge locally-submitted invitations into the table
+    (function () {
+      try {
+        const store = JSON.parse(localStorage.getItem('dum_invitations') || '[]');
+        const tbody = document.getElementById('inv-tbody');
+        if (!store.length || !tbody) return;
+        store.forEach(inv => {
+          const tr = document.createElement('tr');
+          tr.style.cursor = 'pointer';
+          tr.onclick = () => location.href = 'invitation-detail.html?id=' + encodeURIComponent(inv.id);
+          const date = inv.event_date ? new Date(inv.event_date).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '—';
+          const submitted = inv.created_at ? new Date(inv.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }) : 'Just now';
+          tr.innerHTML = `
+            <td><div class="inv-table__event">${inv.event_name || '—'}<small>${inv.event_type || 'Event'}</small></div></td>
+            <td>${inv.organization_name || '—'}</td>
+            <td>${date}</td>
+            <td>${inv.city || '—'}</td>
+            <td><span class="status-pill status-pill--new">New</span></td>
+            <td class="inv-table__date">${submitted}</td>
+          `;
+          tbody.insertBefore(tr, tbody.firstChild);
+        });
+      } catch (e) { console.warn(e); }
+    })();
+  </script>
+</body>
+</html>

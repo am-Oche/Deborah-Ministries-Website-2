@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Invite Deborah · Deborah Ufedejo Ministries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <div id="nav-slot"></div>
+  <script src="assets/partials.js" data-active="invite"></script>
+
+  <header class="page-head">
+    <div class="page-head__inner">
+      <div class="crumbs"><a href="index.html">Home</a><span class="crumbs__sep">/</span><span>Invite Deborah</span></div>
+      <div class="eyebrow page-head__eyebrow">Ch. 08 — Invitation</div>
+      <h1 class="page-head__title"><em>Invite</em> Deborah.</h1>
+      <p class="page-head__lede">
+        Tell us about your event, and the ministry team will review your request. Please share as much detail as possible — every field helps us prepare well.
+      </p>
+    </div>
+  </header>
+
+  <section class="section" id="invite-container">
+    <div class="container-tight">
+
+      <!-- Progress banner -->
+      <div style="display:flex; align-items:center; justify-content:space-between; padding: 16px 22px; background: var(--cream); border-radius: 999px; margin-bottom: 32px; border: 1px solid var(--line); flex-wrap: wrap; gap: 12px;">
+        <div style="display:flex; align-items:center; gap: 10px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);">
+          <span style="width:8px; height:8px; border-radius:999px; background: var(--accent);"></span>
+          Invitation Form · 8 sections
+        </div>
+        <span style="font-size: 12px; color: var(--muted);">All fields are treated confidentially.</span>
+      </div>
+
+      <form id="invite-form" class="form-shell">
+        <!-- Organization -->
+        <div class="form-section">
+          <div class="form-section__label">
+            01
+            <strong>Organization</strong>
+          </div>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label>Organization / Church / Ministry Name</label>
+              <input type="text" name="organization_name" required placeholder="Name of your organization" />
+            </div>
+            <div class="field">
+              <label>Contact Person</label>
+              <input type="text" name="contact_name" required />
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="tel" name="phone" required />
+            </div>
+            <div class="field field--full">
+              <label>Email</label>
+              <input type="email" name="email" required />
+            </div>
+          </div>
+        </div>
+
+        <!-- Event -->
+        <div class="form-section">
+          <div class="form-section__label">
+            02
+            <strong>Event</strong>
+          </div>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label>Event Name</label>
+              <input type="text" name="event_name" required placeholder="Give your event a name" />
+            </div>
+            <div class="field">
+              <label>Event Type</label>
+              <select name="event_type" required>
+                <option value="">Select…</option>
+                <option>Sunday Ministration</option>
+                <option>Church Service</option>
+                <option>Worship Night</option>
+                <option>Conference</option>
+                <option>Retreat</option>
+                <option>Wedding</option>
+                <option>Special Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Event Date</label>
+              <input type="date" name="event_date" required />
+            </div>
+            <div class="field">
+              <label>Event Time</label>
+              <input type="time" name="event_time" required />
+            </div>
+            <div class="field">
+              <label>Venue</label>
+              <input type="text" name="venue" required />
+            </div>
+            <div class="field">
+              <label>City</label>
+              <input type="text" name="city" required />
+            </div>
+            <div class="field field--full">
+              <label>Event Theme (Optional)</label>
+              <input type="text" name="event_theme" placeholder="e.g. Encounter · Awake · Surrender" />
+            </div>
+            <div class="field field--full">
+              <label>Scripture / Theme Verse (Optional)</label>
+              <input type="text" name="scripture_theme" placeholder="e.g. Psalm 27:4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Attendance -->
+        <div class="form-section">
+          <div class="form-section__label">
+            03
+            <strong>Attendance</strong>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label>Expected Attendance</label>
+              <input type="text" name="expected_attendance" placeholder="e.g. 400 people" required />
+            </div>
+            <div class="field">
+              <label>Expected Duration of Ministration</label>
+              <input type="text" name="expected_duration" placeholder="e.g. 45 minutes" required />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ministry assignment -->
+        <div class="form-section">
+          <div class="form-section__label">
+            04
+            <strong>Ministry Assignment</strong>
+          </div>
+          <div class="form-grid form-grid--single">
+            <div class="field">
+              <label>Description of Ministry Assignment</label>
+              <textarea name="assignment_description" rows="5" placeholder="Describe the ministry moment you're inviting Deborah into…" required></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical -->
+        <div class="form-section">
+          <div class="form-section__label">
+            05
+            <strong>Technical</strong>
+          </div>
+          <div class="form-grid form-grid--single">
+            <div class="field">
+              <label>Sound / Technical Requirements</label>
+              <textarea name="technical_requirements" rows="4" placeholder="Sound system, IEM, backline, staging, monitoring, etc."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logistics -->
+        <div class="form-section">
+          <div class="form-section__label">
+            06
+            <strong>Logistics</strong>
+          </div>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label>Transportation Arrangements</label>
+              <textarea name="transportation" rows="3" placeholder="Local transport, airport pickup, etc."></textarea>
+            </div>
+            <div class="field field--full">
+              <label>Accommodation Requirements</label>
+              <textarea name="accommodation" rows="3" placeholder="Hotel arrangements or hosting details"></textarea>
+            </div>
+            <div class="field field--full">
+              <label>Feeding Arrangements</label>
+              <textarea name="feeding" rows="3" placeholder="Meal arrangements before, during and after ministration"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div class="form-section">
+          <div class="form-section__label">
+            07
+            <strong>Support</strong>
+          </div>
+          <div class="form-grid form-grid--single">
+            <div class="field">
+              <label>Giving / Support Available for Ministry</label>
+              <textarea name="financial_support" rows="3" placeholder="Please indicate what support the organization is able to provide."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional -->
+        <div class="form-section">
+          <div class="form-section__label">
+            08
+            <strong>Additional Information</strong>
+          </div>
+          <div class="form-grid form-grid--single">
+            <div class="field">
+              <label>Anything else the ministry team should know?</label>
+              <textarea name="additional_information" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid var(--line); flex-wrap: wrap; gap: 20px;">
+          <p class="muted" style="font-size: 13px; max-width: 40ch;">
+            By submitting, you agree that the ministry team may contact you to discuss the details of this invitation.
+          </p>
+          <button type="submit" class="btn btn--primary btn--lg">
+            Submit Invitation
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Success state (hidden by default) -->
+  <section id="invite-success" style="display:none;" class="section">
+    <div class="container-narrow success-state">
+      <div style="width: 100%;">
+        <div class="success-state__icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M5 13l6 6 10-13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="eyebrow eyebrow--plain" style="justify-content: center; margin-bottom: 16px;">Invitation received</div>
+        <h2 class="display display--l" style="margin-bottom: 24px;"><em>Thank you</em> for your invitation.</h2>
+        <p class="lede" style="margin: 0 auto 40px;">
+          Our ministry team will review the details and contact you regarding the next steps.
+        </p>
+        <div style="display:flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn btn--primary">Return home</a>
+          <a href="ministry.html" class="btn btn--ghost">Explore the ministry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-slot"></div>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

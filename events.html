@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Events · Deborah Ufedejo Ministries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <div id="nav-slot"></div>
+  <script src="assets/partials.js" data-active="events"></script>
+
+  <header class="page-head">
+    <div class="page-head__inner">
+      <div class="crumbs"><a href="index.html">Home</a><span class="crumbs__sep">/</span><span>Events</span></div>
+      <div class="eyebrow page-head__eyebrow">Ch. 06 — Gatherings</div>
+      <h1 class="page-head__title">Where the ministry<br/>meets <em>the room.</em></h1>
+      <p class="page-head__lede">
+        Upcoming and past gatherings, worship nights, conferences and church ministrations. Details are added here as engagements are confirmed.
+      </p>
+    </div>
+  </header>
+
+  <!-- Upcoming -->
+  <section class="section">
+    <div class="container">
+      <div style="display:flex; align-items:end; justify-content:space-between; gap:32px; margin-bottom: 40px; flex-wrap:wrap;">
+        <h2 class="display display--m">Upcoming <em>events</em></h2>
+        <span class="muted" style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">3 scheduled</span>
+      </div>
+
+      <div class="events-list">
+        <a class="event-row" href="#">
+          <div class="event-row__date">TBA · 2026</div>
+          <div class="event-row__title">Encounter Nights<small>Worship Gathering</small></div>
+          <div class="event-row__loc">Location TBA</div>
+          <div class="event-row__tag">Ministration</div>
+          <div class="event-row__arrow">→</div>
+          <div class="event-row__peek"><img src="assets/images/worship-lights-1.jpg" alt="" /></div>
+        </a>
+        <a class="event-row" href="#">
+          <div class="event-row__date">TBA · 2026</div>
+          <div class="event-row__title">His Presence Conference<small>Conference</small></div>
+          <div class="event-row__loc">Location TBA</div>
+          <div class="event-row__tag">Ministration</div>
+          <div class="event-row__arrow">→</div>
+          <div class="event-row__peek"><img src="assets/images/crowd-lights.jpg" alt="" /></div>
+        </a>
+        <a class="event-row" href="#">
+          <div class="event-row__date">TBA · 2026</div>
+          <div class="event-row__title">Sunday Ministration<small>Church Ministration</small></div>
+          <div class="event-row__loc">Location TBA</div>
+          <div class="event-row__tag">Ministration</div>
+          <div class="event-row__arrow">→</div>
+          <div class="event-row__peek"><img src="assets/images/worship-service.jpg" alt="" /></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past events / empty state -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="display:flex; align-items:end; justify-content:space-between; gap:32px; margin-bottom: 40px; flex-wrap:wrap;">
+        <h2 class="display display--m">Past <em>events</em></h2>
+      </div>
+
+      <div class="empty-state">
+        <div style="opacity: 0.4; margin-bottom: 24px;">
+          <svg width="42" height="42" viewBox="0 0 42 42" fill="none"><rect x="5" y="9" width="32" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 17h32" stroke="currentColor" stroke-width="1.5"/><path d="M14 5v7M28 5v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="empty-state__title">Past events will appear here.</h3>
+        <p class="muted" style="max-width: 44ch; margin: 0 auto;">
+          As Deborah ministers at churches, conferences and gatherings, the archive of past events and moments will grow in this space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Invite -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-bleed">
+        <div class="cta-bleed__bg" style="background-image: url('assets/images/singer-spotlight.jpg');"></div>
+        <div class="cta-bleed__inner">
+          <div class="eyebrow" style="color: var(--gold-soft); margin-bottom: 24px;">Host a gathering</div>
+          <h2 class="display display--l" style="margin-bottom: 24px;">Invite Deborah to your <em>next event.</em></h2>
+          <a href="invite.html" class="btn btn--light btn--lg">
+            Send an invitation
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-slot"></div>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
